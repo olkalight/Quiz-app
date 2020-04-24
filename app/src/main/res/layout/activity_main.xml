@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/starrynight"
     android:fillViewport="true">
-    <!-- one Checkbox (only with multiple right answers) one Radio Button (only for single answers) one text entry
-    button for submiting and receiving result
-    at least four of the following views: TextView, ImageView, Button, Checkbox, EditText,
-    LinearLayout, RelativeLayout, ScrollView, RadioButton, RadioGroup-->
-    <LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background=""
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginBottom="16dp"
+            style="@style/first_cardView_style"
             card_view:cardCornerRadius="16dp"
             card_view:contentPadding="16dp">
 
@@ -31,34 +25,37 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style=""
+                    style="@style/question_numbers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/question1title" />
 
                 <TextView
-                    style=""
+                    style="@style/questions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/question1" />
 
                 <CheckBox
-                    android:id="@+id/simpleCheckBox"
+                    android:id="@+id/first_q_answer_one"
+                    style="@style/answers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Simple CheckBox" />
+                    android:text="@string/question_1_first_answer" />
 
                 <CheckBox
-                    android:id="@+id/simpleCheckBox2"
+                    android:id="@+id/first_q_answer_two"
+                    style="@style/answers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Simple CheckBox2" />
+                    android:text="@string/question_1_second_answer" />
 
                 <CheckBox
-                    android:id="@+id/simpleCheckBox3"
+                    android:id="@+id/first_q_answer_three"
+                    style="@style/answers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Simple CheckBox3" />
+                    android:text="@string/question_1_third_answer" />
 
             </LinearLayout>
 
@@ -66,12 +63,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginBottom="16dp"
+            style="@style/cardView_style"
             card_view:cardCornerRadius="16dp"
             card_view:contentPadding="16dp">
 
@@ -81,40 +73,43 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style=""
+                    style="@style/question_numbers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1title" />
+                    android:text="@string/question2title" />
 
                 <TextView
-                    style=""
+                    style="@style/questions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1" />
+                    android:text="@string/question2" />
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
+                    android:id="@+id/radio_group2"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/radioButton1"
+                        android:id="@+id/second_q_answer_one"
+                        style="@style/answers"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="Excellent " />
+                        android:text="@string/question_2_first_answer" />
 
                     <RadioButton
-                        android:id="@+id/radioButton2"
+                        android:id="@+id/second_q_answer_two"
+                        style="@style/answers"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="Satisfactory" />
+                        android:text="@string/question_2_second_answer" />
 
                     <RadioButton
-                        android:id="@+id/radioButton3"
+                        android:id="@+id/second_q_answer_three"
+                        style="@style/answers"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="Below Average" />
+                        android:text="@string/question_2_third_answer" />
                 </RadioGroup>
 
             </LinearLayout>
@@ -122,12 +117,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginBottom="16dp"
+            style="@style/cardView_style"
             card_view:cardCornerRadius="16dp"
             card_view:contentPadding="16dp">
 
@@ -137,22 +127,22 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style=""
+                    style="@style/question_numbers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1title" />
+                    android:text="@string/question3title" />
 
                 <TextView
-                    style=""
+                    style="@style/questions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1" />
+                    android:text="@string/question3" />
 
                 <EditText
-                    android:id="@+id/answerInputUserLastName"
+                    android:id="@+id/third_q_answer"
+                    style="@style/answers"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/LastNameLaraHint"
                     android:inputType="text"
                     android:maxLength="10" />
             </LinearLayout>
@@ -160,12 +150,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginBottom="16dp"
+            style="@style/cardView_style"
             card_view:cardCornerRadius="16dp"
             card_view:contentPadding="16dp">
 
@@ -175,45 +160,43 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style=""
+                    style="@style/question_numbers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1title" />
+                    android:text="@string/question4title" />
 
                 <TextView
-                    style=""
+                    style="@style/questions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1" />
+                    android:text="@string/question4" />
 
                 <CheckBox
-                    android:id="@+id/simpleCheckBox"
+                    android:id="@+id/fourth_q_answer_one"
+                    style="@style/answers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Simple CheckBox" />
+                    android:text="@string/question_4_first_answer" />
 
                 <CheckBox
-                    android:id="@+id/simpleCheckBox2"
+                    android:id="@+id/fourth_q_answer_two"
+                    style="@style/answers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Simple CheckBox2" />
+                    android:text="@string/question_4_second_answer" />
 
                 <CheckBox
-                    android:id="@+id/simpleCheckBox3"
+                    android:id="@+id/fourth_q_answer_three"
+                    style="@style/answers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Simple CheckBox3" />
+                    android:text="@string/question_4_third_answer" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginBottom="16dp"
+            style="@style/cardView_style"
             card_view:cardCornerRadius="16dp"
             card_view:contentPadding="16dp">
 
@@ -223,52 +206,50 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style=""
+                    style="@style/question_numbers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1title" />
+                    android:text="@string/question5title" />
 
                 <TextView
-                    style=""
+                    style="@style/questions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1" />
+                    android:text="@string/question5" />
 
                 <RadioGroup
-                    android:id="@+id/radioGroup"
+                    android:id="@+id/radio_group5"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
                     <RadioButton
-                        android:id="@+id/radioButton1"
+                        android:id="@+id/fifth_q_answer_one"
+                        style="@style/answers"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="Excellent " />
+                        android:text="@string/question_5_first_answer" />
 
                     <RadioButton
-                        android:id="@+id/radioButton2"
+                        android:id="@+id/fifth_q_answer_two"
+                        style="@style/answers"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="Satisfactory" />
+                        android:text="@string/question_5_second_answer" />
 
                     <RadioButton
-                        android:id="@+id/radioButton3"
+                        android:id="@+id/fifth_q_answer_three"
+                        style="@style/answers"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
-                        android:text="Below Average" />
+                        android:text="@string/question_5_third_answer" />
                 </RadioGroup>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="32dp"
-            android:layout_marginRight="32dp"
-            android:layout_marginBottom="32dp"
+            style="@style/cardView_style"
             card_view:cardCornerRadius="16dp"
             card_view:contentPadding="16dp">
 
@@ -278,26 +259,41 @@
                 android:orientation="vertical">
 
                 <TextView
-                    style=""
+                    style="@style/question_numbers"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1title" />
+                    android:text="@string/question6title" />
 
                 <TextView
-                    style=""
+                    style="@style/questions"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1" />
+                    android:text="@string/question6" />
 
                 <EditText
-                    android:id="@+id/answerInputUserLastName"
+                    android:id="@+id/sixth_q_answer"
+                    style="@style/answers"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/LastNameLaraHint"
+                    android:hint="@string/hint_for_question6"
                     android:inputType="text"
                     android:maxLength="10" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/submit_button"
+            style="@style/submit_button"
+            android:background="@drawable/border_button"
+            android:text="@string/submit"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/reset_button"
+            style="@style/reset_button"
+            android:background="@drawable/border_button"
+            android:text="@string/reset"
+            android:textAlignment="center" />
 
     </LinearLayout>
 

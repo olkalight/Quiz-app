@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">Quizz-app</string>
+    <string name="app_name">Impressionism Art Quiz</string>
+    <string name="question1title">Question 1</string>
+    <string name="question2title">Question 2</string>
+    <string name="question3title">Question 3</string>
+    <string name="question4title">Question 4</string>
+    <string name="question5title">Question 5</string>
+    <string name="question6title">Question 6</string>
+    <string name="question1">Which TWO art forms had a major influence on Impressionism?</string>
+    <string name="question_1_first_answer">Photography</string>
+    <string name="question_1_second_answer">Folk Art</string>
+    <string name="question_1_third_answer">Japanese Art</string>
+    <string name="question2">When did the Impressionist art movement take place?</string>
+    <string name="question_2_first_answer">Late 1500s to early 1600s</string>
+    <string name="question_2_second_answer">Mid to late 1800s</string>
+    <string name="question_2_third_answer">Late 1900s</string>
+    <string name="question3">What was the first name of Van Gogh?</string>
+    <string name="question4">Which of the following is a characteristic of the Impressionist art movement?</string>
+    <string name="question_4_first_answer">The artist used rapid brush strokes to save time</string>
+    <string name="question_4_second_answer">The artist tries to capture a moment in time</string>
+    <string name="question_4_third_answer">The light and color of the moment is important</string>
+    <string name="question5">Who painted \'Impression Sunrise\' (1872)?</string>
+    <string name="question_5_first_answer">Pierre Auguste Renoir</string>
+    <string name="question_5_second_answer">Henri de Toulouse-Lautrec</string>
+    <string name="question_5_third_answer">Claude Monet</string>
+    <string name="question6">What was the most popular subject matter in Impressionism?</string>
+    <string name="hint_for_question6">Perfect way for exploration of Nature \n and it\'s shimmering light</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
 </resources>
