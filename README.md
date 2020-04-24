@@ -9,8 +9,8 @@ Udacity Android Basics Nanodegree Project No. 3: Quiz App
    Checkboxes are only used for questions with multiple right answers. Radio buttons are only used 
    for questions with a single right answer.
    
-3. App includes a button for the user to submit their answers and receive a score.
-   App includes a button for the user to reset their answers. 
+3. - App includes a button for the user to submit their answers and receive a score.
+   - App includes a button for the user to reset their answers. 
 
 3. The code adheres to all of the following best practices:
    - Text sizes are defined in sp
