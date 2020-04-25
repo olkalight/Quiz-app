@@ -151,8 +151,17 @@ public class MainActivity extends AppCompatActivity {
     final View.OnClickListener submitButtonOnClickListener = new View.OnClickListener() {
         public void onClick(final View v) {
             checkAllQuestions();
-            Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/6",
-                    Toast.LENGTH_LONG).show();
+            if (correctAnswers == 6) {
+                Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/6 \n      Perfect result!",
+                        Toast.LENGTH_LONG).show();
+            } else if (correctAnswers < 6 && correctAnswers >= 4) {
+                Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/6 \n      Almost there!",
+                        Toast.LENGTH_LONG).show();
+            }
+            else {
+                Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/6 \n   You can do better!",
+                        Toast.LENGTH_LONG).show();
+            }
             resetCorrectAnswersCounter();
         }
     };
