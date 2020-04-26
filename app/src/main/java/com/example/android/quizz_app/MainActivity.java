@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkQuestionThreeAnswer() {
         String answer = getQuestionThreeUserInput();
-        if (answer.trim().equalsIgnoreCase("vincent")) {
+        if (answer.trim().equalsIgnoreCase(getString(R.string.third_question_answer))) {
             correctAnswers++;
         }
     }
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkQuestionSixAnswer() {
         String answer2 = getQuestionSixUserInput();
-        if (answer2.trim().equalsIgnoreCase("landscape")) {
+        if (answer2.trim().equalsIgnoreCase(getString(R.string.sixth_question_answer))) {
             correctAnswers++;
         }
     }
@@ -151,15 +151,18 @@ public class MainActivity extends AppCompatActivity {
     final View.OnClickListener submitButtonOnClickListener = new View.OnClickListener() {
         public void onClick(final View v) {
             checkAllQuestions();
+            String stringCorrect;
+            String stringToastOne;
+            String stringToastTwo;
+            String stringToastThree;
             if (correctAnswers == 6) {
-                Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/6 \n      Perfect result!",
+                Toast.makeText(MainActivity.this, getString(R.string.correct_answers) + correctAnswers + getString(R.string.toast_perfect_score),
                         Toast.LENGTH_LONG).show();
             } else if (correctAnswers < 6 && correctAnswers >= 4) {
-                Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/6 \n      Almost there!",
+                Toast.makeText(MainActivity.this, getString(R.string.correct_answers) + correctAnswers + getString(R.string.toast_almost_there),
                         Toast.LENGTH_LONG).show();
-            }
-            else {
-                Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/6 \n   You can do better!",
+            } else {
+                Toast.makeText(MainActivity.this, getString(R.string.correct_answers) + correctAnswers + getString(R.string.toast_you_can_do_better),
                         Toast.LENGTH_LONG).show();
             }
             resetCorrectAnswersCounter();

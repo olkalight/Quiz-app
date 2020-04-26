@@ -16,8 +16,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view1"
             style="@style/first_cardView_style"
-            card_view:cardCornerRadius="16dp"
-            card_view:contentPadding="16dp">
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -64,8 +64,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view2"
             style="@style/cardView_style"
-            card_view:cardCornerRadius="16dp"
-            card_view:contentPadding="16dp">
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -118,8 +118,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view3"
             style="@style/cardView_style"
-            card_view:cardCornerRadius="16dp"
-            card_view:contentPadding="16dp">
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -151,8 +151,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view4"
             style="@style/cardView_style"
-            card_view:cardCornerRadius="16dp"
-            card_view:contentPadding="16dp">
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -197,8 +197,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view5"
             style="@style/cardView_style"
-            card_view:cardCornerRadius="16dp"
-            card_view:contentPadding="16dp">
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -250,8 +250,8 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view6"
             style="@style/cardView_style"
-            card_view:cardCornerRadius="16dp"
-            card_view:contentPadding="16dp">
+            card_view:cardCornerRadius="@dimen/card_view_default_radius"
+            card_view:contentPadding="@dimen/card_view_default_padding">
 
             <LinearLayout
                 android:layout_width="match_parent"
