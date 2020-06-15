@@ -21,7 +21,7 @@ Udacity Android Basics Nanodegree Project No. 3: Quiz App
 
 
 #### App Images 
-The below images show how the app looks like
+App Screenshots
 
 
 <img src = "Screenshots/Screenshot_1.png" width="250px" height="450px"> <img src = "Screenshots/Screenshot_2.png" width="250px" height="450px" > <img src = "Screenshots/Screenshot_3.png" width="250px" height="450px" >
