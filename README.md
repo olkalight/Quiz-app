@@ -1,7 +1,7 @@
 # Quizz-app
 Udacity Android Basics Nanodegree Project No. 3: Quiz App
 
-<b>PROJECT SPECIFICATION</b>
+<b>PROJECT SPECIFICATIONS</b>
 
 1. Simple Quiz app that contains 6 questions from Impressionism Art History. 
 
